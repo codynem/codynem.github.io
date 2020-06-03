@@ -1,0 +1,206 @@
+@import url("btns.css");
+@import url("btn.css");
+@import url("main-text.css");
+@import url("card_container.css");
+
+  
+body {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+}
+    
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 2.5fr 1fr;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main sd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft";
+}
+    
+    
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+}
+    
+#one{ 
+      grid-area: hd; 
+}
+    
+#two { 
+      grid-area: ft; 
+}
+    
+#three { 
+      grid-area: main;
+}
+    
+#four { 
+      grid-area: sd; 
+      justify-content: space-evenly;
+}
+       
+.image1{
+      display: inline-block;
+      max-width: 300px;
+      max-height:300px;    
+      cursor: pointer;
+}
+      
+   
+@media(max-width: 415px){
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px 4200px 900px 450px;
+    grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";   
+  }
+    
+  .fixed_container{
+    text-align: center;
+    position: fixed;
+    margin-top:-5px;
+  }
+    
+  .card_container{
+    width: 75%;
+    position: relative;
+    margin-top: 200px;
+  }
+    
+  .btns{
+    text-align: center;
+  } 
+    
+  .image1{
+    display: inline-block;
+    justify-content: center;
+    cursor: pointer;    
+  }
+    
+  .main-text{
+    margin-top:300px;
+  }
+}
+    
+@media(min-width: 414px) and (max-width: 600px){
+  .container {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 3000px 800px 100px;
+    grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";
+  }
+    
+  .header{
+    margin-top: -90px;
+  }
+    
+  .card_container{
+    margin-top: -200px;
+    position: relative;
+    width: 55%;   
+  }
+    
+    
+  .image1{
+    display: inline-block;
+    cursor: pointer;
+  }
+    
+  .btns{
+    display: inline-block;
+    max-width: 8px; 
+  }
+    
+  .main-text{
+    text-align: justify;
+  }
+}
+    
+@media(min-width: 600px) and (max-width: 1100px){
+  .container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 350px 350px 400px;
+    grid-template-rows: 150px 3500px 300px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main sd sd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft";   
+  }
+    
+  .header{
+    margin-top: -2%;  
+  }
+    
+  .card_container{
+    margin-top: -1300px;
+    position: fixed;
+    margin-bottom: 300px;
+    width:25%;
+    height:550px;
+  }
+    
+  .image1{
+    display: flex;
+    cursor: pointer;   
+  }
+    
+  .main-text{
+    margin-top: -500px;
+  }
+}
+    
+@media(min-width: 1100px) {
+  .container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr 0.4fr;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main sd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft";
+  }  
+    
+  .image1{
+    display: inline-block;
+    cursor: pointer;   
+  }
+
+  .card_container{
+      margin-top: -700px;
+      position: fixed;
+      margin-bottom: 300px;
+      width:15%;
+      height:550px;
+  }
+}
+    
+  @keyframes aaa {
+      0%{
+        left: -110%;
+        top: 90%;
+      }50%{
+        left: 10%;
+        top: -30%;
+      }100%{
+        top: -10%;
+        left: -10%

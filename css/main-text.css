@@ -1,0 +1,36 @@
+.image2{
+    max-width: 100%;
+}
+        
+h1{
+    font-size: 22px;
+}
+        
+h2{
+    font-size: 20px;
+}
+        
+h3{
+    font-size: 18;
+}
+          
+.main-text{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    max-width: 80%;   
+    color:white;
+    text-align: justify;
+    font-size: 16px;
+}
+
+article{
+    color:white;
+    text-align: justify;
+    font-size: 16px;
+}
+
+section{
+    color:white;
+    text-align: justify;
+    font-size: 16px;
+}
